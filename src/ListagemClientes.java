@@ -20,7 +20,9 @@ public class ListagemClientes {
         System.out.println(exibirCliente(nomeCliente1,anoNascimentoCliente1));
         System.out.println(exibirCliente(nomeCliente2,anoNascimentoCliente2));
 
-
+        //Testando novo cabeçalho
+        System.out.println(retornarCabecalho(20));
+        System.out.println(retornarCabecalho(40));
 
     }
 
@@ -45,5 +47,14 @@ public class ListagemClientes {
         }else {
             return "IDOSO";
         }
+    }
+    public static String retornarCabecalho(int tamanho){
+        String asteriscos="*";
+        String cabecalho;
+        for (int i = 0; i <= tamanho-1; i++) {
+            asteriscos+="*";
+        }
+        cabecalho=asteriscos+"\nBem vindo ao COMEX\n"+asteriscos;
+        return cabecalho;
     }
 }
